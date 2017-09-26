@@ -191,7 +191,7 @@ module Ethereum
     end
 
     def build
-      class_name = @name.camelize
+      class_name = @name.camelize + 'EthereumRbContract'
       parent = self
       create_function_proxies
       create_event_proxies
